@@ -19,7 +19,7 @@ n_classrooms=3  # What data type is n_classrooms?
 print(type(n_classrooms))
 
 room_seats=20
-max_total_students=3*20  # How many? 
+max_total_students=3*room_seats  # How many? 
 print("Max number of students: %d" %max_total_students)
 #%%
 # At the beginning of the year there are 56 students enrolled.
@@ -56,3 +56,7 @@ age_patient=25
 today_date="05/11/2018"
 weight_patient=90.8
 height_patient=180
+name=fill_name_patient.split(" ")[0]
+family_name=fill_name_patient.split(" ")[1]
+year_birth=int(today_date[6:])-age_patient
+bmi=weight_patient**2/height_patient
